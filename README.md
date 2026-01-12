@@ -30,7 +30,7 @@ Drawing on **17 years of diagnostic intuition**, I prioritised interpretability 
 ---
 
 ## 📈 Results & Visualisations
-1. **Perfect Classification:** All optimised models achieved an **Area Under the Curve (ROC AUC) of 1.0000** on the independent test set.
+1. **Perfect Classification:** All optimised models achieved an **Area Under the Curve (ROC-AUC) of 1.0000** on the independent test set.
 2. **Literature-Validated Signature:** Successfully isolated a five-gene consensus signature (*BTC*, *CHI3L2*, *LCE3A*, *S100A9*, *SPRR2G*) strongly corroborated by existing biological and clinical literature.
 3. **Primary Biomarker Identification:** Identified *AKR1B10* as a primary biomarker, providing clear, interpretable evidence of its functional role in keratinocyte overproliferation.
 
@@ -39,10 +39,11 @@ Drawing on **17 years of diagnostic intuition**, I prioritised interpretability 
 ---
 
 ## 📁 Repository Structure
-* **`code/pre-processing.ipynb`**: Notebook for data loading, inspection, $log_{2}$ transformation, variance-based gene selection, and scaling.
-* **`code/model_training_evaluation.ipynb`**: Notebook for model training, hyperparameter tuning, SHAP analysis, and quantitative overlap quantification.
-* **`data/Psoriasis_disease_GSE54456_RPKM.csv`**: The primary expression matrix utilised for the primary analysis.
-* **`thesis/Robert-Jacques-Psoriasis-Dissertation.pdf`**: Final prize-winning research report.
+* **`code/inf6000-psoriasis-preprocessing.ipynb`**: Data loading, inspection, $log_{2}$ transformation, and variance-based gene selection.
+* **`code/inf6000-psoriasis-modelling.ipynb`**: Hyperparameter tuning, multi-model evaluation, SHAP analysis, and consensus ranking.
+* **`data/inf6000-psoriasis-transcriptomics.csv`**: The primary expression matrix (GSE54456) utilised for the primary analysis.
+* **`visualisations/`**: Directory containing PCA clustering plots, SHAP summary visualisations, and consensus ranking bar charts.
+* **`report/inf6000-psoriasis-dissertation.pdf`**: Final prize-winning research report detailing the resolution of the multiplicity problem.
 
 ---
 
