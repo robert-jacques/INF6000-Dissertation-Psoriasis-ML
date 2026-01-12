@@ -30,21 +30,20 @@ Drawing on **17 years of diagnostic intuition**, I prioritised interpretability 
 ---
 
 ## 📈 Results & Visualisations
-1. **Perfect Classification:** All optimised models achieved an **Area Under the Curve (ROC-AUC) of 1.0000** on the independent test set.
-2. **Literature-Validated Signature:** Successfully isolated a five-gene consensus signature (*BTC*, *CHI3L2*, *LCE3A*, *S100A9*, *SPRR2G*) strongly corroborated by existing biological and clinical literature.
-3. **Primary Biomarker Identification:** Identified *AKR1B10* as a primary biomarker, providing clear, interpretable evidence of its functional role in keratinocyte overproliferation.
-
-
+1. **Dimensionality Reduction:** PCA visualisation (from `inf6000-psoriasis-preprocessing.ipynb`) confirming distinct transcriptomic clustering between psoriatic and healthy skin samples.
+2. **Explainable AI (XAI):** SHAP summary plots for the Random Forest model illustrating the global impact of gene expression on diagnostic outcomes.
+3. **Consensus Signature:** A consolidated ranking analysis resolving the "multiplicity problem" by identifying a five-gene signature (*BTC*, *CHI3L2*, *LCE3A*, *S100A9*, *SPRR2G*) consistently prioritised across all analytical methods.
+4. **Model Performance:** Visual verification of the 1.0000 ROC-AUC and perfect classification scores via the RFC confusion matrix.
 
 ---
 
 ## 📁 Repository Structure
-* **`code/inf6000-psoriasis-preprocessing.ipynb`**: Data loading, inspection, $log_{2}$ transformation, and variance-based gene selection.
-* **`code/inf6000-psoriasis-modelling.ipynb`**: Hyperparameter tuning, multi-model evaluation, SHAP analysis, and consensus ranking.
+* **`code/inf6000-psoriasis-preprocessing.ipynb`**: Data engineering, $log_{2}$ transformation, and variance-based gene selection.
+* **`code/inf6000-psoriasis-modelling.ipynb`**: Multi-model training, SHAP analysis, and consensus ranking.
 * **`data/inf6000-psoriasis-transcriptomics.csv`**: The primary expression matrix (GSE54456) utilised for the primary analysis.
-* **`visualisations/`**: Directory containing PCA clustering plots, SHAP summary visualisations, and consensus ranking bar charts.
-* **`report/inf6000-psoriasis-dissertation.pdf`**: Final prize-winning research report detailing the resolution of the multiplicity problem.
-* **`requirements.txt`**: Full list of dependencies and pinned library versions required to replicate the Python 3.13.5 environment.
+* **`visualisations/`**: Directory containing `inf6000-pca-clustering.png`, `inf6000-shap-analysis.png`, `inf6000-consensus-signature.png`, and `inf6000-model-performance.png`.
+* **`report/inf6000-psoriasis-dissertation.pdf`**: Final prize-winning research report.
+* **`requirements.txt`**: Full list of dependencies for the Python 3.13.5 environment.
 
 ---
 
