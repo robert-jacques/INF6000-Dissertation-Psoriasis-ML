@@ -44,6 +44,7 @@ Drawing on **17 years of diagnostic intuition**, I prioritised interpretability 
 * **`data/inf6000-psoriasis-transcriptomics.csv`**: The primary expression matrix (GSE54456) utilised for the primary analysis.
 * **`visualisations/`**: Directory containing PCA clustering plots, SHAP summary visualisations, and consensus ranking bar charts.
 * **`report/inf6000-psoriasis-dissertation.pdf`**: Final prize-winning research report detailing the resolution of the multiplicity problem.
+* **`requirements.txt`**: Full list of dependencies and pinned library versions required to replicate the Python 3.13.5 environment.
 
 ---
 
